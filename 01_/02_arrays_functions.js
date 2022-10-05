@@ -317,9 +317,52 @@
 // function includes(array, value) {
 // for (let i = 0; i < array.length; i+=1) {
 //   if (array[i] === value) {
-//     return true;    
-//   }  
+//     return true;
+//   }
 // }
 //   return false;
 // }
 
+/* -------------------------------------------------------------------------- */
+/*                     пошук максимального числа з масиву                     */
+/* -------------------------------------------------------------------------- */
+// let num = [1,2,3,4,5,6]
+
+//  function find_max(nums) {
+//  let max_num = Number.NEGATIVE_INFINITY; // smaller than all other numbers
+//  for (let num of nums) {
+//  if (num > max_num) {
+//    max_num = num;
+//  }
+//  }
+//  return max_num;
+//  }
+
+// console.log(find_max(num))
+
+
+/* -------------------------------------------------------------------------- */
+/*                   знайти пару чисел, сума яких дорівнює К                  */
+/* -------------------------------------------------------------------------- */
+let arr = [-3, 0, 1, 2, 3, 4]
+const k = 5;
+let a = [];
+let b = {}
+
+function twoSum(array, y) {
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array.length; j++) {
+      if (array[i] + array[j] === y) {
+        // return `${array[i]}  ${array[j]}` // повертає першу пару чисел
+        console.log(array[i], array[j]) // повертає всі можливы пари чисел
+        // a.push(array[i], array[j]) // записуємо числа в новий масив
+        b.number1 = array[i];
+        b.number2 = array[j];
+      }   
+    }    
+  }  
+}
+
+const z = twoSum(arr,k)
+// console.log(a) // новий масив
+console.log(b) // новий об"єкт
