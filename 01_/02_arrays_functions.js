@@ -85,7 +85,7 @@
 /*                      Перетворення рядка/слова в масив                      */
 /* -------------------------------------------------------------------------- */
 // function splitMessage(message, delimeter) {
-//   let words;
+//   let words;917 9317 5033
 //   words = message.split(delimeter);
 //   return words;
 // }
